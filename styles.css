@@ -3,13 +3,15 @@
   --primary-color: #1e1e1e;
   --accent-color: blue;
   --nav-bg: #000000;
-  --hover-color: #ff3b3b;}
+  --hover-color: #ff3b3b;
+}
 *:root {
---background-color:red;
---primary-color: blue;
---secondary-color: black;}
+  --background-color: red;
+  --primary-color: blue;
+  --secondary-color: black;
+}
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -18,12 +20,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--primary-color);
   background-color: var(--background-color);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
 }
 
-/* --------------------- */
-/* NAVIGATION BAR */
-/* --------------------- */
+/* nav bar */
+
 nav {
   display: flex;
   justify-content: center;
@@ -58,12 +59,12 @@ nav a:hover {
   background-color: var(--hover-color);
   color: black;
 }
-nav a[aria-current='page'] {
+nav a[aria-current="page"] {
   color: #000000;
   background-color: #d4d4d4;
 }
 
-nav a[aria-current='page'] {
+nav a[aria-current="page"] {
   background-color: white;
   color: black;
 }
@@ -71,9 +72,8 @@ nav a:hover {
   background-color: var(--secondary-color);
 }
 
-/* --------------------- */
-/* MAIN CONTENT */
-/* --------------------- */
+/* main content */
+
 main {
   padding: 2rem;
   text-align: center;
@@ -85,7 +85,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: blue;
-  font-size: 10.rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -93,9 +93,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* --------------------- */
-/* FLEXBOX GALLERY */
-/* --------------------- */
 .gallery {
   display: flex;
   flex-direction: row;
@@ -109,11 +106,11 @@ h2 {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
 .child {
-  border:solid 1px black;
+  border: solid 1px black;
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -121,7 +118,7 @@ h2 {
 
 .item:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 .item img {
@@ -138,12 +135,12 @@ h2 {
   margin-bottom: 0.4rem;
   color: var(--accent-color);
 }
-.parent { 
-display: flex;
-flex-direction: row;
-width: 100%;
-border: solid 1px black;
-justify-content: space-between;
+.parent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: solid 1px black;
+  justify-content: space-between;
 }
 
 .item p {
@@ -170,7 +167,7 @@ justify-content: space-between;
 
 .item:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .item img {
