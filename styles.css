@@ -1,4 +1,5 @@
 :root {
+  --background-image: url(https://www.google.com/imgres?q=red%20background%20image&imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1568535904307-f48b760a39f3%3Fixlib%3Drb-4.1.0%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwdGV4dHVyZXxlbnwwfHwwfHx8MA%253D%253D%26fm%3Djpg%26q%3D60%26w%3D3000&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fred-texture&docid=byZi2ZXUZaL8iM&tbnid=EXNLGQfyVJcIDM&vet=12ahUKEwj-gb6J_t2QAxU0RDABHZWqFlAQM3oECB4QAA..i&w=3000&h=1688&hcb=2&ved=2ahUKEwj-gb6J_t2QAxU0RDABHZWqFlAQM3oECB4QAA)
   --background-color: lightblue;
   --primary-color: #1e1e1e;
   --accent-color: blue;
@@ -21,6 +22,7 @@ body {
   color: var(--primary-color);
   background-color: var(--background-color);
   background-color: var(--background-color);
+  background-image: var(--background-image);
 }
 
 /* nav bar */
@@ -153,6 +155,7 @@ h2 {
   justify-content: center;
   gap: 15rem;
   padding: 5rem;
+  width: 100%;
 }
 
 .item {
