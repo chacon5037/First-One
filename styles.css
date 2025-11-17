@@ -198,3 +198,9 @@ h2 {
   bottom: 25px;
   flex-direction: column;
 }
+.backgroundimage {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAtjExMmsKJNK_aUdEAtbZzBdiXQbMykiRw&s);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
