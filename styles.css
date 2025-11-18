@@ -59,10 +59,10 @@ nav a {
 
 nav a:hover {
   background-color: var(--hover-color);
-  color: black;
+  color: white;
 }
 nav a[aria-current="page"] {
-  color: #000000;
+  color: yellow;
   background-color: #d4d4d4;
 }
 
@@ -71,7 +71,7 @@ nav a[aria-current="page"] {
   color: black;
 }
 nav a:hover {
-  background-color: var(--secondary-color);
+  background-color: blue;
 }
 
 /* main content */
@@ -170,7 +170,7 @@ h2 {
 
 .item:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px blue;
 }
 
 .item img {
@@ -203,4 +203,13 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+.input {
+  width: 66%;
 }
