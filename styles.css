@@ -191,12 +191,17 @@ h2 {
   background-size: cover;
   background-position: center;
 }
-.form {
+.formStyle {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.input {
-  width: 66%;
+.inputRow { 
+display: flex;
+}
+.backgroundAboutMe {
+  background-color: orange;
 }
