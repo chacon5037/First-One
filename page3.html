@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>PAGE 3</title>
+  <head>
+    <title>Other page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
- <body>
+  </head>
+  <body>
     <nav>
-	<a href="index.html">Main Page</a>
-	<a href="page2.html">About Me</a>
-    <a href="page3.html" aria-current=page >Learn More</a>
+      <a href="/">Main Page</a>
+      <a href="/page2.html" aria-current="page">About Me</a>
+      <a href="page3.html">Learn More</a>
     </nav>
     <main>
-        idk what this will be yet<h1>Hi</h1>
+      <h1>About This Website</h1>
+      <h2>Clothes Site </h2>
+      <p>This website is about designing your clothes to your fit!</p>
+      <div class="flex-grid"> 
+        <div class="item">Find</div>
+        <div class="item">Your</div>
+        <div class="item"> Style </div>
+      </div> 
+      <section>
+        <form name="myform">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email">
+          <label for="othertext">Other Text</label>
+          <input type="text" name="othertext">
+          <label for="checkbox">Choose An Option</label>
+          <div style="display: flex;"> </div>
+          <input type="reset" name="reset">
+          <input type="checkbox" id="checkbox" name="checkbox">
+        </form>
+      </section>
     </main>
-</body>
-</head>
+  </body>
+</html>
 </html>
