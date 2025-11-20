@@ -19,32 +19,60 @@
   <main class="backgroundAboutMe">
 
     <h1>About This Website</h1>
-    <h2>Clothes Site </h2>
-    <p>This website is about designing your clothes to your fit!</p>
+    <h2>Customization Site </h2>
+    <p>This website is about designing your Jeans, Shoes or Hoodies to Fit!</p>
     <div class="flex-grid">
-      <div class="item">Find</div>
+      <div class="item">Me</div>
+      <p>
+        My names Edison
+      </p>
       <div class="item">Your</div>
       <div class="item"> Style </div>
     </div>
+    <h2> Contact Us!</h2>
+    <h3> We Would Love To Hear Feedback/Review!</h3>
     <section>
       <form name="myform" class="formStyle">
+        
         <div class="inputRow">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email">
-        </div>
-        <div class="inputRow">
-          <label for="othertext">Other Text:</label>
+          <label for="othertext">First Name:</label>
           <input type="text" name="othertext">
         </div>
         <div class="inputRow">
-          <label for="checkbox">Choose An Option</label>
+          <label for="Last Name:">Last Name:</label>
+          <input type="text" name="Last Name:">
+        </div>
+        <div class="inputRow">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="inputRow">
+       <label for="Phone Number">Phone Number:</label>
+        <input type="number" name="Phone Number">
+        </div>
+        <div class="inputRow">
+        <label for="Message">Message:</label>
+        <input type="text" name="Message">
+        </div>
+        <div class="inputRow">
+          <label for="checkbox">Would You Visit Site Again?</label>
           <input type="checkbox" id="checkbox" name="checkbox">
         </div>
 
-        <div style="display: flex;"> </div>
-        <input type="reset" name="reset">
-
-        <input type="submit">
+        <div class="inputRow">
+          <label for="reset" name="reset"></label>
+          <input type="reset" name="reset">
+       </div>
+       <div class="inputRow"> 
+        <label for="sumbit" name="sumbit"></label>
+        <input type="submit" name="sumbit" onclick="formSubmission()"/>
+        <script>
+             function formSubmission() {
+               alert("The form was successfully submitted! Thank You From FindYourStyle!");
+             }
+        </script>  
+        </div>
+            
       </form>
     </section>
   </main>
