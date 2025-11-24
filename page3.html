@@ -2,57 +2,71 @@
 <html lang="en">
 
 <head>
-  <title>Other page</title>
+  <title>About Me</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="styles.css" />
   <script type="module" src="script.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
-<body>
+<body class="backgroundAboutMe">
 
   <nav>
-    <a href="/">Mens</a>
-    <a href="/page2.html">Womens</a>
+    <a href="index.html">Mens</a>
+    <a href="page2.html">Womens</a>
     <a href="page3.html" aria-current="page">About Me</a>
+    <a href="page4.html">Color Combos</a>
   </nav>
   <main class="backgroundAboutMe">
-
     <h1>About This Website</h1>
-    <h2>Customization Site </h2>
-    <p>This website is about designing your Jeans, Shoes or Hoodies to Fit!</p>
-    <div class="flex-grid">
-      <div class="item">Me</div>
-      <p>
-        My names Edison
-      </p>
-      <div class="item">Your</div>
-      <div class="item"> Style </div>
-    </div>
+    <h2>Customization Site</h2>
+    <p style="color: darkviolet;">This website is about designing your Jeans, Shoes or Hoodies to Fit!</p>
+
+    <div class="aboutFlex">
+      <div class="aboutCard">
+        <div class="aboutItem">Me</div>
+        <p style="color:darkblue;">My name is Edison Chacon. I was born in Salem, MA, and I live in Lynn where I attend Lynn Classical High School. One of my favorite things to do is play soccer. In the future, I want to add a feature on this site where you can design your own custom jersey with your name and a logo you choose.</p>
+      </div>
+    
+      <div class="aboutCard">
+        <div class="aboutItem">Why I Made This</div>
+        <p style="color:darkblue;">I made this website for people who want to change their outfits to match their own style. I want everyone to enjoy being creative with what they wear and feel confident standing out. Many people buy the same clothes, but style is personal, and I want this site to help people express who they are.</p>
+      </div>
+    
+      <div class="aboutCard">
+        <div class="aboutItem">Future Plans</div>
+        <p style="color: darkblue;">My plan for the future is to expand the website beyond just shoes, sweaters, and hoodies. I want to add more options so users can create full custom outfits that are unique to them. The goal is to give everyone more choices and more ways to design what fits their personality.</p>
+      </div>
+    
+    </div>    
     <h2> Contact Us!</h2>
     <h3> We Would Love To Hear Feedback/Review!</h3>
+    <div class="logo">
+      <img src="/images/favicon.png" alt="Logo">
+    </div>
     <section>
       <form name="myform" class="formStyle">
         
         <div class="inputRow">
-          <label for="othertext">First Name:</label>
-          <input type="text" name="othertext">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname">
         </div>
         <div class="inputRow">
-          <label for="Last Name:">Last Name:</label>
-          <input type="text" name="Last Name:">
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname">
         </div>
         <div class="inputRow">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email">
         </div>
         <div class="inputRow">
-       <label for="Phone Number">Phone Number:</label>
-        <input type="number" name="Phone Number">
+       <label for="phone">Phone Number:</label>
+       <input type="tel" id="phone" name="phone">
         </div>
         <div class="inputRow">
-        <label for="Message">Message:</label>
-        <input type="text" name="Message">
+          <label for="message">Message:</label>
+          <input type="text" id="message" name="message">
         </div>
         <div class="inputRow">
           <label for="checkbox">Would You Visit Site Again?</label>
@@ -60,12 +74,11 @@
         </div>
 
         <div class="inputRow">
-          <label for="reset" name="reset"></label>
+          <label for="reset"></label>
           <input type="reset" name="reset">
        </div>
        <div class="inputRow"> 
-        <label for="sumbit" name="sumbit"></label>
-        <input type="submit" name="sumbit" onclick="formSubmission()"/>
+        <input type="submit" name="submit" onclick="formSubmission()"/>
         <script>
              function formSubmission() {
                alert("The form was successfully submitted! Thank You From FindYourStyle!");
@@ -77,7 +90,5 @@
     </section>
   </main>
 </body>
-
-</html>
 
 </html>
