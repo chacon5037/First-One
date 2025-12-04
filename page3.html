@@ -82,8 +82,20 @@
         <input type="submit" name="submit" onclick="formSubmission()"/>
         <script>
              function formSubmission() {
-               alert("The form was successfully submitted! Thank You From FindYourStyle!");
+               const myVar = "this is a string";
+               console.log(myVar);
+             
+
+             const firstNameInput = document.getElementById("firstname").value;
+             console.log(firstNameInput);
+
+             alert("Thanks for sumbiting, " + firstNameInput)
              }
+             function addNumbers(a, b) {
+              return a + b
+             }
+        
+
         </script>  
         </div>
             
