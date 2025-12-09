@@ -22,6 +22,9 @@
 
     <main>
       <h1>FIND YOUR STYLE</h1> 
+      <label>Dark Mode 
+        <input type="checkbox" onchange="toggleDarkMode()">
+      </label>
       <h2 style="color: aqua;">Mens Section</h2>
       <div class="logo">
         <img src="/images/favicon.png" alt="Logo">
@@ -68,6 +71,29 @@
         </div>
       </footer>
     </main>
-
+    <script>
+      let darkMode = false;
+    
+      function toggleDarkMode() {
+        console.log("Dark mode initially is " + darkMode);
+    
+        darkMode = !darkMode;
+    
+        if (darkMode) {
+          // DARK MODE
+          document.body.classList.remove("backgroundimage");
+          document.body.style.backgroundColor = "#000000";
+          document.body.style.color = "#FFFFFF";
+          
+        } else {
+          // LIGHT MODE
+          document.body.classList.add("backgroundimage");
+          document.body.style.backgroundColor = "var(--background-color)";
+          document.body.style.color = "var(--primary-color)";
+        }
+    
+        console.log("Dark mode has been changed to " + darkMode);
+      }
+    </script>
   </body>
 </html>
